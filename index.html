@@ -20,24 +20,7 @@
 				color: #ffffff;
 			}
 
-			#info {
-				position: absolute;
-				width: 100%;
-				color: #ffffff;
-				padding: 5px;
-				font-family: Monospace;
-				font-size: 13px;
-				font-weight: bold;
-				text-align: center;
-				z-index: 1;
-			}
-
-			#menu {
-				position: absolute;
-				bottom: 20px;
-				width: 100%;
-				text-align: center;
-			}
+			
 
 			.element {
 				width: 120px;
@@ -50,52 +33,13 @@
 
 			.element:hover {
 				box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
-				border: 1px solid rgba(127,255,255,0.75);
+				border: 4px solid rgba(127,255,255,0.75);
+
 			}
 
-				.element .number {
-					position: absolute;
-					top: 20px;
-					right: 20px;
-					font-size: 12px;
-					color: rgba(127,255,255,0.75);
-				}
+				
 
-				.element .symbol {
-					position: absolute;
-					top: 40px;
-					left: 0px;
-					right: 0px;
-					font-size: 60px;
-					font-weight: bold;
-					color: rgba(255,255,255,0.75);
-					text-shadow: 0 0 10px rgba(0,255,255,0.95);
-				}
-
-				.element .details {
-					position: absolute;
-					bottom: 15px;
-					left: 0px;
-					right: 0px;
-					font-size: 12px;
-					color: rgba(127,255,255,0.75);
-				}
-
-			button {
-				color: rgba(127,255,255,0.75);
-				background: transparent;
-				outline: 1px solid rgba(127,255,255,0.75);
-				border: 0px;
-				padding: 5px 10px;
-				cursor: pointer;
-			}
-			button:hover {
-				background-color: rgba(0,255,255,0.5);
-			}
-			button:active {
-				color: #000000;
-				background-color: rgba(0,255,255,0.75);
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -108,7 +52,7 @@
 		
 
 		<script>
-			var photos = ["Allie%20SherrattS.jpg","Brian_SullivanS.jpg","Graham_HeathS.jpg","Karen_OrlowskiS.jpg","Paulo_MelchioriS.jpg","SimonS.jpg","Amber_PietrzykS.jpg","Calvin_HuiS.jpg","Hayley_MorrisS.jpg","Kelsey_EatonS.jpg","PeteS.jpg","Smone%20Sept_croppedS.JPG","Anderson_LeiteS.jpg","Carlee_BensonS.jpg","IMG_4909S.JPG","Lisa_LiS.jpg","Rebecca_HeimS.jpg","SwipeS.jpg","AndrewS.jpg","Christina_NadlerS.jpg","Jackie_FokS.jpg","Matt_HarwoodS.jpg","Sarah_Jessee2S.JPG","UliS.jpg","Angus_MacDonaldS.jpg","Daniel_CalligaroS.jpg","Jay%20Berberick%202S.JPG","Micaela_brookman_RGA3S.jpg","Sarah_RockS.jpg","Victoria_GrahamS.jpg","Anjali_MadisonS.jpg","Derrick_MartinS.jpg","JeffSquires_SwipeS.jpg","Nate_Sloan_Phonelist.jpg","Scott_FesslerS.jpg","anna%20GarciaS.jpg","Anna_SpositoS.jpg","Divya%20Reddy_HeadshotS.JPG	Jeffrey_CardoniS.jpg","Nina_KauffmanS.jpg","Scott_SteeleS.jpg","bruna.jpg","Arthur_PetrilloS.jpg","Evan%20Ben-ArtziS.jpg","Jessica_SuggS.jpg","OfficialS.jpg","Sean_WuS.jpg","fabricio.jpg","Ben%20AdamsS.jpg","Fefo%20LibaronaS.jpg","Jessie%20SohpaulS.jpg","Ofir_SagiS.jpg","SharonS.jpg","felipemahalem2016S.jpg","Ben_AguirreS.JPG","Fernando_BittarS.jpg","Joe%20ToscanoS.jpg","PaolaColombo.jpg","Sharona_OshanaS.jpg","fileS.jpeg","Bobby_SchultzS.jpg","Frederioc_FelixS.jpg","John_TubertS.jpg","Paul-Torres_PhoneList.jpg","ShellyS.jpeg"];
+			var photos = ["Yael_Cesarkas.jpg","Victoria_Graham.jpg","Simone_Sept.jpg","Simon_Attfield.jpg","Shelly_Spencer.jpg","Sharon_Paravastu.jpg","Sharon_Paravastu.jpg","Sean_Wu.jpg","Scott_Steele.jpg","Sarah_Rock.jpg","Sarah_Jessee.jpg","Rebecca_Heim.jpg","Paulo_Melchiori.jpg","Paul_Torres.jpg","Paola_Colombo.jpg","Ofir_Sagi.jpg","Nina_Kauffman.jpg","Nik_Karlsson.jpg","Nicole_King.jpg","Nate_Sloan.jpg","Naree_Kae.jpg","Matthew_Harwood.jpg","Lucia_Orlandi.jpg","Lourdes_Montano.jpg","Lisa_Li.jpg","Leslie_Ogoe.jpg","Kyle_Tellier.jpg","Kelsie_Klaustermeier.jpg","Kelsey_Eaton.jpg","Kelli_Robertson.jpg","John_Tubert.jpg","Joe_Wanko.jpg","Jessie_Sohpaul.jpg","Jessica_Sugg.jpg","Jen_Mayo.jpg","Jeff_Squires.jpg","James_Tinsley.jpg","James_Slater.jpg","Jackie_Fok.jpg","Jackie_Fok.jpg","Hayley_Morris.jpg","Hanna_Wilson.jpg","Hana_Newman.jpg","Frederico_Felix.jpg","Frank_Gonzalez.jpg","Fernando_Cuneo_Libarona.jpg","Fernando_Bittar.jpg","Felipe_Mahalem.jpg","Fabricio_Teixeira.jpg","Evan_Ben-Artzi.jpg","Eric_Lee.jpg","Emily_White.jpg","Ellie_Hardy.jpg","Divya_Reddy.jpg","Derrick_Martin.jpg","Daniel_Calligaro.jpg","Daniel_Burke.jpg","Dana_Pauly.jpg","Damian_Boyd-Boffa.jpg","Christina_Nadler.jpg","Calvin_Hui.jpg","Bruna_Oliveros.jpg","Bruna_Oliveros.jpg","Brian_Sullivan.jpg","Bobby_Schultz.jpg","Benjamin_Aguirre.jpg","Ben_Adams.jpg","Arthur_Petrillo.jpg","Aramis_Grey.jpg","Anna_Sera_Garcia.jpg","Anjali_Madison.jpg","Angus_MacDonald.jpg","Andy_McKinney.jpg","Andrew_Gleason.jpg","Andrew_Eaton.jpg","Anderson_Leite.jpg","Amber_Pietrzyk.jpg","Allison_Sherratt.jpg","Alex_Sachaniuk.jpg","Adeline_Yeo.jpg","Aaron_Davidoff.jpg"];
 
 			var camera, scene, renderer;
 			var controls;
@@ -131,13 +75,15 @@
 				for ( var i = 0; i < photos.length; i += 1 ) {
 
 					var element = document.createElement( 'div' );
-					//element.className = 'element';
-					element.style.backgroundColor = 'white';
+					element.className = 'element';
+					element.style.backgroundColor = 'black';
 
 					
 					var img = document.createElement('img');
 					img.src = "photos/"+photos[i];
 					element.appendChild( img );
+
+					
 
 					var object = new THREE.CSS3DObject( element );
 					object.position.x = Math.random() * 4000 - 2000;
@@ -145,14 +91,16 @@
 					object.position.z = Math.random() * 4000 - 2000;
 					scene.add( object );
 
+					img.addEventListener( 'click', function ( event ) {
+						console.log(object.position);
+					}, false );
+
 					objects.push( object );
 
 					//
 
 					var object = new THREE.Object3D();
-					//object.position.x = ( table[ i + 3 ] * 140 ) - 1330;
-					//object.position.y = - ( table[ i + 4 ] * 180 ) + 990;
-
+					
 					targets.table.push( object );
 
 				}
